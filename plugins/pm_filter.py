@@ -566,9 +566,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about_menu":
         buttons = [[
-        InlineKeyboardButton('ᴅᴋ ʙᴏᴛx', url='https://t.me/dk_botx'),
-        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
-        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
+        InlineKeyboardButton('𝐌𝐘 𝐎𝐖𝐍𝐄𝐑 ⚒', url='https://t.me/MOVIE_MEADIA'),
+        InlineKeyboardButton('𝐌𝐘 𝐆𝐑𝐎𝐔𝐏 📌', url='https://t.me/MM_ARCHIVES'),
+        InlineKeyboardButton('𝐁𝐀𝐂𝐊', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()

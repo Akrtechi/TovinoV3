@@ -497,10 +497,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
+        InlineKeyboardButton('➕ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
      [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓', callback_data='about_menu'),
+        InlineKeyboardButton('𝐂𝐋𝐎𝐒𝐄', callback_data='close')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
@@ -555,20 +555,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu')
+                        InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓', callback_data='about_menu')
                     ],
                     [
-                        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-                        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+                        InlineKeyboardButton('𝐁𝐀𝐂𝐊', callback_data='start'),
+                        InlineKeyboardButton('𝐂𝐋𝐎𝐒𝐄', callback_data='close')
                     ]
                 ]
             )
         )
     elif query.data == "about_menu":
         buttons = [[
-        InlineKeyboardButton('𝐌𝐘 𝐎𝐖𝐍𝐄𝐑 ⚒', url='https://t.me/MOVIE_MEADIA'),
-        InlineKeyboardButton('𝐌𝐘 𝐆𝐑𝐎𝐔𝐏 📌', url='https://t.me/MM_ARCHIVES'),
-        InlineKeyboardButton('𝐁𝐀𝐂𝐊', callback_data='start')
+        InlineKeyboardButton('ᴅᴋ ʙᴏᴛx', url='https://t.me/dk_botx'),
+        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
+        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
